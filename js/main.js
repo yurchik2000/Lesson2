@@ -47,7 +47,42 @@ $(function(){
         $(this).addClass('active__btn');
         $('.open__btn').removeClass('active__btn');
       });
-
-
     
 })
+
+
+const day = document.querySelector('.day');
+const hour = document.querySelector('.hour');
+const minute = document.querySelector('.minute');
+const second = document.querySelector('.second');
+
+let currentDate = new Date();
+const dayBegin = new Date("1/1/2010");
+console.log(currentDate);
+const oneDay = 24 * 60 * 60 * 1000;
+
+dateFrom = Math.trunc((currentDate.getTime() - dayBegin.getTime())/oneDay);
+day.textContent = dateFrom;
+let spanDay = document.createElement("span"); 
+spanDay.innerText = "дней";
+day.append(spanDay);
+
+
+hour.textContent = currentDate.getHours();
+let spanHour = document.createElement("span"); 
+spanHour.innerText = "часов";
+hour.append(spanHour);
+
+let spanMinute = document.createElement("span"); 
+minute.textContent = currentDate.getMinutes();
+spanMinute.innerText = "минут";
+minute.append(spanMinute);
+
+let spanSecond = document.createElement("span"); 
+second.textContent = currentDate.getSeconds();
+console.log(second);
+spanSecond.innerText = "секунд";
+second.append(spanSecond);
+
+
+console.log(dateFrom);
