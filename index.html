@@ -14,42 +14,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">        
 </head>
 <body>
-    <header class="header__top">
-        <div class="container">
-            <a href="#" class="logo">
-                <img class="logo__img" src="./img/logo.png" alt="logo" >
-            </a>
-            <nav class="header__menu">
-                <ul class="menu__list">
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">О нас</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Услуги</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Продукция</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Наши работы</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu__link" href="#">Контакты</a>
-                    </li>                        
-                </ul>
-            </nav>
-            <div class="header__contacts">
-                <a class="contacts__phone" href="phone: +380000000000">+38 000 000 0 000</a>
-                <a class="contacts__mail" href="mail: user@gmail.com">user@gmail.com</a>
-            </div>
-            <div class="languages">
-                <a class="languages__link--active"href="#">рус</a>                                        
-                <a class=""href="#">укр</a>
-            </div>
+    <header class="header">
+        <div class="container">            
+            <div class="header__inner">
+                <a href="#" class="logo">
+                    <img class="logo__img" src="./img/logo.png" alt="logo" >
+                </a>                
+                <nav class="header__menu">
+                    <div class="menu__button"></div>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">О нас</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Услуги</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Продукция</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Наши работы</a>
+                        </li>
+                        <li class="header__menu-item">
+                            <a class="header__menu-link" href="#">Контакты</a>
+                        </li>                        
+                    </ul>
+                </nav>                
+                <div class="header__contacts">
+                    <a class="contacts__phone" href="phone: +380000000000">+38 000 000 0 000</a>
+                    <a class="contacts__mail" href="mail: user@gmail.com">user@gmail.com</a>
+                </div>
+                <div class="languages">
+                    <a class="languages__link--active"href="#">рус</a>                                        
+                    <a class=""href="#">укр</a>
+                </div>
+            </div>            
         </div>
     </header>
     <main>
-            <section class="about" id="HEADER">        
+      <section class="about" id="HEADER">        
         <div class="container">
             <div class="about__inner">           
                 <div class="about__inner-main">
@@ -128,31 +131,31 @@
                         <ul class="outdoor__slider-list"> 
                             <li class="outdoor__slider-item"> 
                                 <div class="item__wrapper">
+                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
                                     <ul class="outdoor__content"> 
                                         <li class="outdoor__text">1 Lorem ipsum dolor sit amet</li>
                                         <li class="outdoor__text">consectetur adipiscing elit, sed do</li>
                                         <li class="outdoor__text">eiusmod tempor incididunt ut labore </li>
-                                    </ul>                                
-                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
+                                    </ul>                                                                
                                 </div>                                
                             </li>
                             <li class="outdoor__slider-item"> 
                                 <div class="item__wrapper">
+                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
                                     <ul class="outdoor__content"> 
                                         <li class="outdoor__text">2 Lorem ipsum dolor sit amet</li>
                                         <li class="outdoor__text">consectetur adipiscing elit, sed do</li>
                                         <li class="outdoor__text">eiusmod tempor incididunt ut labore </li>
-                                    </ul>                                
-                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
+                                    </ul>                                                                    
                                 </div>                                
                             </li>
                             <li class="outdoor__slider-item"> 
                                 <div class="item__wrapper">
+                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
                                     <ul class="outdoor__content"> 
                                         <li class="outdoor__text">3 Lorem ipsum dolor sit amet</li>
                                         <li class="outdoor__text">consectetur adipiscing elit, sed do</li>                                    
-                                    </ul>                                
-                                    <img class="outdoor__slider-img" src="./img/outddor-item1.png" alt="image">                                
+                                    </ul>                                                                    
                                 </div>                                
                             </li>
                             
@@ -162,6 +165,7 @@
                 <button class="order__btn">ЗАКАЗАТЬ</button>                                
             </div>            
         </section>
+
         <section class="experience">
             <div class="container">
                 <h5 class="experience__title">Опыт работы</h5>
@@ -176,6 +180,7 @@
                 </div>                    
             </div>
         </section>
+                
         <section class="poligraph">
             <div class="container">
                 <h5 class="poligraph__title">Полиграфия для вашего бизнеса</h5>
@@ -185,56 +190,56 @@
                             <img class="poligraph__item-img" src="./img/pol-item1.png" alt="image">
                         </div>
                         <p class="poligraph__item-text">Корпоративная полиграфия</p>
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">1 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>                                        
                     <li class="poligraph__item item2">
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item2.png" alt="image">
                         </div>
                         <p class="poligraph__item-text">Календари</p>
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item3">
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item3.png" alt="image">
                         </div>
                         <p class="poligraph__item-text">Каталоги</p>
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item4">
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item4.png" alt="image">
                         </div>
                         <p class="poligraph__item-text">Листовки и буклеты</p>
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item5">                        
                         <p class="poligraph__item-text">Папки</p>
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item5.png" alt="image">
                         </div>                        
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">5 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item6">
                         <p class="poligraph__item-text">Стикеры</p>
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item6.png" alt="image">
                         </div>                        
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item7">
                         <p class="poligraph__item-text">Визитки</p>
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item7.png" alt="image">
                         </div>                        
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">7 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                     <li class="poligraph__item item8">
                         <p class="poligraph__item-text">Открытки</p>
                         <div class="poligraph__item-imgbox">
                             <img class="poligraph__item-img" src="./img/pol-item8.png" alt="image">
                         </div>                        
-                        <p class="poligraph__item-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
+                        <p class="poligraph__item-content">8 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercita</p>
                     </li>
                 </ul>
                 <button class="order__btn">ЗАКАЗАТЬ</button>    
@@ -266,6 +271,7 @@
 
             </div>        
         </section>
+        
         <section class="request">
             <div class="container">
                 <h5 class="request__title">Создайте ваш запрос </h5>
@@ -319,10 +325,10 @@
                         <span>ЗВОНИТЕ! </span> </p>
                     <a class="answers__phone-link" href="phone:+380000000000" >+38 000 000 0 000</a>    
                 </div>
-
             </div>
         </section>
     </main>
+    
     <div class="footer">
         <div class="container">
             <div class="footer__inner">
